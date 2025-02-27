@@ -1,0 +1,82 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 10px  rgb(47, 224, 237) ;
+}
+
+#display {
+    background-color:rgba(157, 230, 236, 0.884);
+    color: white;
+    font-size: 2em;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.operator {
+    background-color: rgb(47, 224, 237);
+}
+
+.operator:hover {
+    background-color: rgb(7, 129, 159);
+}
+
+ .equal {
+    background-color:  rgb(47, 224, 237);
+    grid-row: span 2;
+} 
+
+
+
+.equal:hover {
+    background-color: rgb(7, 129, 159) ;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+p {
+    margin-top: 10px;
+    color: white;
+}
+
+.dev-name {
+    color:  rgb(47, 224, 237);
+    font-weight: bold;
+}
